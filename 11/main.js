@@ -4,8 +4,7 @@
  */
 function decodeFilename(filename) {
   // Code here
-  const decode = filename.slice(filename.indexOf('_'), filename.lastIndexOf('.'))
-  return decode
+  return filename.slice(filename.indexOf('_') + 1, filename.lastIndexOf('.'))
 }
 
 
